@@ -22,7 +22,7 @@ int main(int argc, char const *argv[]) {
         return -1;
     }
 
-    if (nombreCaracteres = read(fichier1, buffer, TAILLE) != TAILLE) {
+    if ((nombreCaracteres = read(fichier1, buffer, TAILLE)) != TAILLE) {
         printf("Erreur lecture fichier 1\n");
         close(fichier1);
         close(fichier2);
@@ -30,7 +30,7 @@ int main(int argc, char const *argv[]) {
         return -1;
     }
 
-    if (nombreCaracteres = write(fichier2, buffer, TAILLE) != TAILLE) {
+    if ((nombreCaracteres = write(fichier2, buffer, TAILLE)) != TAILLE) {
         printf("Erreur écriture fichier 2\n");
         close(fichier1);
         close(fichier2);
