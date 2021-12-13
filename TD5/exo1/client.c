@@ -52,8 +52,6 @@ int main(int argc, char const *argv[]) {
 
     fdSocket = ouvrirUneConnexionTcp();
 
-
-
     printf("Envoi du message au serveur.\n");
     strcpy(tampon, "Message du client vers le serveur");
     send(fdSocket, tampon, strlen(tampon), 0);
